@@ -57,7 +57,7 @@
             <td> <?php echo $row['name'] ?> </td>
             <td> <?php echo $row['roll'] ?> </td>
             <td><img height="100px" src="upload/<?php echo $row['img'] ?>" alt=""></td>
-            <td><a href="edit.php?status=edit&&id=<?php echo $row['id'] ?>">Edit</a></td>
+            <td><a href="update.php?status=edit&&id=<?php echo $row['id'] ?>">Edit</a></td>
             <td><a href="delete.php?status=delete&&id=<?php echo $row['id'] ?>">Delete</a></td>
         </tr>
         <?php } ?>

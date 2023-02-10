@@ -27,10 +27,19 @@ class CrudApp{
         return $result;
     }
 
+    public function displayDataByID($id){
+        $sql = "SELECT * FROM students WHERE id=$id";
+        $result = mysqli_query($this->conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        return $row;
+    }
+
     public function deleteData($id){
         $sql = "DELETE FROM students WHERE id=$id";
         mysqli_query($this->conn, $sql);
     }
+
+
 }
 
 ?>
