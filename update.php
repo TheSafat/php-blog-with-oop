@@ -21,6 +21,7 @@
     
     <form action="" method="post" enctype="multipart/form-data">
         <table>
+            <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
             <tr>
                 <td>Name</td>
                 <td><input type="text" name="name" id="" value="<?php echo $row['name'] ?>"></td>
